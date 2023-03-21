@@ -37,7 +37,7 @@ function getMovieDetail(id) {
         movieTrailerApi,
         movieCreditApi,
       ]);
-      console.log("trailer", movieTrailer);
+      // console.log("trailer", movieTrailer);
 
       dispatch({
         type: "GET_MOVIE_DETAIL_SUCCESS",

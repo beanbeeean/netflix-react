@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: black !important;
+  /* background-color: black !important; */
+  background-color: #141414 !important;
 }
 li,
 ul {
@@ -23,52 +24,81 @@ ul {
   align-items: center;
 }
 
-/* HOME */
+/* NAV */
 
 .nav-item {
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
+  font-size: 20px;
+  font-weight: 700;
 }
 .nav-item:hover {
   color: red;
 }
 
-.banner {
-  display: flex;
-  align-items: center;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
+.btn:hover {
+  background-color: red !important;
+  border-color: red !important;
 }
 
-.banner::before {
-  position: absolute;
-  left: 0;
+/* HOME */
+
+.banner {
+  height: 800px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  cursor: pointer;
+}
+
+.banner-gradient {
+  display: flex !important;
+  align-items: center !important;
   width: 100%;
-  height: 600px;
-  content: "";
-  background: linear-gradient(to right, black, transparent);
+  height: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 0), transparent) !important;
 }
 
 .banner-info {
-  width: 45%;
+  width: 40%;
   margin-left: 40px;
-  z-index: 1;
 }
 
 .banner-info > h1 {
   margin-bottom: 25px;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.banner-info > p {
+  font-size: 20px;
+  color: rgba(250, 245, 245, 0.678);
+}
+
+.slider-section {
+  position: relative;
 }
 
 .home-list-title {
-  margin: 30px 0 20px 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 40px;
+  margin: 30px 0 20px;
+  padding-right: 80px;
 }
 
+.home-list-title:first-child {
+  white-space: nowrap;
+  font-weight: 700;
+}
 .react-multi-carousel-track {
   margin: 0 auto !important;
   /* display: flex;
   align-items: center; */
+}
+.react-multiple-carousel__arrow {
+  background: none !important;
 }
 
 .react-multiple-carousel__arrow--left {
@@ -312,40 +342,60 @@ ul {
 
 .review-card {
   border: 1px solid #ffff;
-  padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 310px;
 }
 
-.review-card > h4 {
+.user-profile {
+  transform: translateY(-50%);
+}
+
+.user-profile > img {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.user-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info > div > h5 {
   font-weight: 600;
 }
 
-.review-date {
-  font-size: 15px;
-}
-.review-author {
-  font-size: 20px;
-  margin-left: 10px;
-}
-
 .review-rating {
-  font-size: 20px;
-  margin-left: 10px;
   color: red;
+  font-weight: 700;
 }
 
-.review-content {
-  overflow: hidden;
+.user-content {
+  width: 100%;
+  padding: 0 3px 10px 10px;
+}
+
+.user-content > p {
+  overflow: scroll;
+  overflow-x: hidden;
   white-space: normal;
   text-overflow: ellipsis;
   display: -webkit-box;
+  word-break: keep-all;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
-  word-break: keep-all;
-  font-size: 16px;
+  margin: 0;
 }
-
 /* MovieList */
 
 .movie-list-card {

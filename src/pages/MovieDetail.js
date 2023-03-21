@@ -61,8 +61,7 @@ const MovieDetail = () => {
               <h1>{selectedMovie?.title}</h1>
               <h4 style={{ marginTop: "30px" }}>{selectedMovie?.tagline}</h4>
             </div>
-            {/* 영화 장르 */}
-            {/* 영화 평점, 누적관람객, 청불여부 */}
+            {/* 영화 장르 , 영화 평점, 누적관람객, 청불여부 */}
             <div className="detail-info-fir">
               <div className="detail-genre">
                 {selectedMovie
