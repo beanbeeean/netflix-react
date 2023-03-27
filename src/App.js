@@ -7,6 +7,7 @@ import Navigation from "./component/Navigation";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
 import MovieDetail from "./pages/MovieDetail";
+import Footer from "./component/Footer";
 
 // 1. 3개 페이지 필요 홈페이지, movie 페이지, movieDetail 페이지
 // 2. 홈페이지에서 배너를 볼 수 있다.
@@ -32,6 +33,7 @@ function App() {
         <Route path="/movies" element={<Movies />} />
         <Route path="/movies/:id" element={<MovieDetail />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
